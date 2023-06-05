@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'icon';
+  src: url('fonts/icon.eot?k3hn1a');
+  src: url('fonts/icon.eot?k3hn1a#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?k3hn1a') format('truetype'),
+    url('fonts/icon.woff?k3hn1a') format('woff'),
+    url('fonts/icon.svg?k3hn1a#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  /* speak: never; */
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  font-size: 3rem;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@keyframes icon-ani {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(0.3em);
+  }
+}
+
+.icon-red {
+  color: red;
+}
+
+.icon-ani {
+  display: inline-block;
+  animation: icon-ani 0.7s alternate infinite;
+}
+
+.icon-face:before {
+  content: '\e900';
+}
+.icon-studiomeal:before {
+  content: '\e901';
+}
